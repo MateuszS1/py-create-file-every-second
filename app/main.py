@@ -4,7 +4,6 @@ from time import sleep
 
 def main() -> None:
     while True:
-        sleep(1)
         current_date = datetime.now()
         filename = (f"app-"
                     f"{current_date.hour}_"
@@ -17,6 +16,7 @@ def main() -> None:
             f.write(str(current_date))
             print(f"{current_date} {filename}")
 
+        sleep(1)
 
 if __name__ == "__main__":
     main()
